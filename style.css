@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --p-clr:#23A6F0;
+    --ash-clr:#737373;
+}
+*{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+body,h1 ,h2,h3,h4,h5,h6{
+    margin: 0px;
+    padding: 0px;
+}
+.bg-clr{
+    background-color: #ECF4FF;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
+/* ----------------------Header------------------ */
+
+.brand-name{
+    font-size: 24px;
+    font-weight: 700;
+    padding:0px 10px;
+}
+nav ul{
+    flex-wrap: wrap;
+    padding: 0px 10px;
+    display: flex;
+    list-style: none;
+}
+
+nav li{
+    padding: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: var(--ash-clr);
+    font-weight:600;
+}
+.container{
+    flex-wrap: wrap;
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.btn-grp{
+    margin-left: 3rem;
+}
+.btn.btn-border{
+    background:var(--p-clr);
+    color: white;
+
+}
+.btn{
+    margin: 5px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid transparent;
+    font-weight: 600;
+    color: var(--p-clr);
+    padding: 13px 20px;
+}
+.btn-grp button i{
+    padding: 0 2px;
+    font-size: 14px;
+    float: right;
+}
+/* --------------------------------------------------- */
