@@ -495,3 +495,48 @@ h2{
     padding: 90px 0;
 }
 /* ------------------------------------------------- */
+
+/* ---------------------newsletter-sec-------------- */
+.newsletter-sec{
+    padding:7rem 17rem;
+}
+.newsletter-sec .container{
+    align-items:center;
+    flex-direction: column;
+    row-gap: 70px;
+
+}
+.newsletter-sec .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.newsletter-sec .content p{
+    color: var(--ash-clr);
+    line-height: 150%;
+    text-align: center;
+    font-weight: 500;
+}
+.newsletter-sec .content h2{
+    font-size: 40px;
+}
+.search-box{
+    display: flex;
+    width: 100%;
+    padding: 0 40px;
+}
+.search-box input{
+    padding: 0 15px;
+    border: #ECF4FF;
+    width: 100%;
+}
+.search-box button{
+    margin: 0;
+    border-radius: 0;
+}
+::placeholder{
+    font-weight: 500;
+}
+/* -------------------------------------------------- */
