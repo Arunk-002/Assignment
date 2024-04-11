@@ -142,6 +142,16 @@ nav a{
     flex-wrap: nowrap;
     align-items: flex-start;
 }
+.card .content{
+    display: flex;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    row-gap: 20px;
+    padding: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
 .hero-card{
     max-width: 330px;
 }
@@ -232,7 +242,9 @@ h2{
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 .sales-banner .card{
+    padding: 0;
     min-height: fit-content;
+    height: 100%;
 }
 .sales-banner .content{
     color: white;
@@ -241,11 +253,12 @@ h2{
     row-gap: 20px;
     padding: 3rem 0;    
 }
-.sales-banner .card{
-    padding: 0;
-}
 .upper-sec{
     position: relative;
+}
+.content h6{
+    font-size: 14px;
+    color: var(--p-clr);
 }
 .overlay-tag{
     min-width: fit-content;
@@ -255,6 +268,7 @@ h2{
 
 }
 .sale-tag{
+    color: white;
     background-color: red;
     font-size: 14px;
     top: 17px;
@@ -283,13 +297,9 @@ h2{
 .option-bg i{
     font-size: 20px;
 }
-.card .content{
-    font-size: 14px;
-    width:100%;
-    height:100%;
-    padding: 15px 20px;
-}
+
 .content-head h6{
+    color: var(--p-clr);
     font-size: 14px;
 }
 .content .content-head{
@@ -309,6 +319,10 @@ h2{
     padding-right: 5px;
     font-size: 15px;
     color: gold;
+}
+.sales-banner .card .content{
+    padding: 0 15px;
+    padding-bottom: 15px;
 }
 .card .content h5{
     font-size: 16px;
@@ -339,3 +353,84 @@ h2{
     font-size: 20px;
 }
 /* --------------------------------------------------- */
+
+/* ----------------subscription-banner--------------- */
+.subscription-banner{
+    padding:7rem 17rem;
+}
+.subscription-banner h6{
+    font-size: 14px;
+}
+.subscription-banner  .container{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.subscription-banner .content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 3rem 0;    
+}
+.subscription-banner .content p{
+    font-weight: 500;
+    color: var(--ash-clr);
+}
+.subscription-banner .c-row{
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.heart{
+    border-radius: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--p-clr);
+}
+.heart i{
+    font-size: 45px;
+    color: white;
+}
+.check-line{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    column-gap: 7px;
+}
+.check-line i{
+    font-size: 30px !important;
+    color: var(--ash-clr);
+}
+.active i{
+    color:#2DC071;
+}.card .btn.btn-full{
+    width: 100%;
+    margin: 0;
+}
+.subscription-banner .card .content{
+    padding: 0;
+    font-size: 12px;
+}
+.card .price{
+    color: var(--p-clr);
+}
+.price p{
+    color: var(--p-clr);
+    font-weight: 700;
+    opacity: .8;
+}
+.subscription-banner .card h3{
+    font-size: 24px;
+}
+.subscription-banner .card .new{
+    margin-top: -4rem;
+    background-color: orange;
+    border-radius: 50%;
+    color: white;
+    padding: 30px 25px;
+    /* top: 17px; */
+    /* left: 10px; */
+    margin-left: 12rem;
+}
+/* ------------------------------------------------- */
