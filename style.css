@@ -434,3 +434,64 @@ h2{
     margin-left: 12rem;
 }
 /* ------------------------------------------------- */
+
+/* ------------------review-banner------------------ */
+.review-banner .c-row{
+    gap: 45px;
+}
+.review-banner{
+    padding:7rem 17rem;
+}
+.review-banner .card{
+    row-gap: 23px;
+}
+.review-banner .container{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.review-banner .content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding: 3rem 0;  
+}
+.review-banner .content p{
+    font-weight: 500;
+    color: var(--ash-clr);
+}
+.n-shadow{
+    box-shadow: none;
+}
+.review-banner .card .content{
+    padding: 0;
+    align-items: center;
+}
+.review-banner .card .content p{
+    padding: 0 16px;
+    line-height: 150%;
+    text-align: center;
+}
+.user-info{
+    padding: 0 10px;
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.user-info p{
+    color: var(--p-clr);
+    font-weight: 700;
+}
+.user-info p span{
+    color: black;
+    font-weight: 400;
+}
+.rating i{
+    color: gold;
+    font-size: 24px !important;
+}
+.review-banner .container .row{
+    padding: 90px 0;
+}
+/* ------------------------------------------------- */
