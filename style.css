@@ -34,7 +34,7 @@ body{
 .brand-name{
     font-size: 24px;
     font-weight: 700;
-    padding:0px 10px;
+    padding-right:15px;
 }
 nav ul{
     flex-wrap: wrap;
@@ -88,8 +88,8 @@ nav a{
 .hero-banner{
     background-image: url("./images/hero.png");
     background-repeat: no-repeat;
-    /* max-height:700px ;
-    width: auto; */
+    max-height:700px ;
+     /* width: auto; */
     background-position:right top;
 
 }
@@ -165,6 +165,12 @@ nav a{
 }
 .card h5{
     font-size: 16px;
+}
+.red-bar{
+    width: 25%;
+    min-height: 2px;
+    background: #E74040;
+
 }
 /* ---------------------------------------------------- */
 
@@ -538,5 +544,58 @@ h2{
 }
 ::placeholder{
     font-weight: 500;
+}
+/* -------------------------------------------------- */
+/* -------------------------footer------------------- */
+
+footer .container{
+    padding:7rem 17rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    justify-items: center;
+    align-items: start;
+}
+footer .info-col h5{
+    font-size: 16px;
+    font-weight: 700;
+}
+footer .container .info-col{
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+footer a{
+    color: var(--ash-clr);
+}
+.info-col .content{
+    display: flex;
+}
+.info-col i{
+    color: var(--p-clr);
+}
+.info-col h6{
+    color:var(--ash-clr);
+}
+footer .navbar{
+    width: 100%;
+    padding: 20px 0;
+    background: #FAFAFA;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+footer .navbar .social{
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+footer .navbar h6{
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--ash-clr);
 }
 /* -------------------------------------------------- */
