@@ -11,6 +11,9 @@
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
 }
+li{
+    list-style: none;
+}
 a{
     text-decoration: none;
 }
@@ -59,8 +62,9 @@ h3{
     font-size: 24px;
 }
 .card-head{
-    color: black;
+    color: #252B42;
 }
+
 /* --------------------header----------------- */
 
 .brand-name{
@@ -165,11 +169,6 @@ h3{
     flex-wrap: nowrap;
     align-items: flex-start;
 }
-.red-bar{
-    width: 25%;
-    height: 2px;  
-    background-color: var(--bar-red);
-}
 .card-logo{
     display: flex;
     align-items: center;
@@ -178,14 +177,28 @@ h3{
     border-radius: 10px;
     background: var(--p-clr);
 }
+.hero-card{
+    row-gap: 30px;
+}
+.red-bar::after{
+    margin-top: 20px;
+    display: block;
+    content:' ';
+    background-color: var(--bar-red);
+    width: 50px;
+    height: 2px;
+}
 .c-row .hero-card:nth-child(2) .card-logo{
     background: green;
 }
 .c-row .hero-card:nth-child(3) .card-logo{
-    background: black;
+    background: #3C403D;
+
+;
 }
 .card-head{
-    color: black;
+    color: #252B42;
+;
 }
 .h-row{
     margin-top: -8rem;
@@ -201,8 +214,9 @@ h3{
     column-gap: 150px;
     align-items: center;
 }
-.block-content .red-bar{
+.block-content .red-bar::after{
     height: 7px;
+    width: 94px;
 }
 .s-width{
     width: 361px;
@@ -271,7 +285,8 @@ h3{
 }
 .option-bg{
     padding: 1rem; 
-    color: black;
+    color: #252B42;
+;
     background-color: white;
     border-radius: 50%;
 }
@@ -280,7 +295,9 @@ h3{
     flex-direction: column;
     row-gap: 15px ;
     padding: 10px 20px;
-    color: black;
+    padding-bottom: 30px;
+    color: #252B42;
+;
 }
 .card-rating{
     align-items: center;
@@ -290,7 +307,8 @@ h3{
 .rating-tag{
     padding: 6px;
     border-radius: 25px;
-    background-color: black;
+    background-color: #252B42;
+;
     color: white;
 }
 .gold-i{
@@ -360,7 +378,7 @@ h3{
     column-gap: 10px;
 }
 .check-div{
-    background-color:var(--ash-clr);
+    background: #BDBDBD;
     padding: 7px 9px;
     border-radius: 50%;
 }
@@ -374,10 +392,12 @@ h3{
     color: white;
 }
 .new{
+    color: white;
     margin-top: -5rem;
-    margin-left: 15rem;
+    font-size: 24px;
+    margin-left: 14.6rem;
     background: #E77C40;
-    padding: 37px 29px;
+    padding: 33px 20px;
     border-radius: 50%;
 }
 .sub-card{
@@ -392,6 +412,7 @@ h3{
     display: flex;
     flex-direction: column;
     row-gap: 100px;
+    padding-bottom: 5rem;
 }
 .n-shadow{
     box-shadow: none;
@@ -414,7 +435,8 @@ h3{
     align-items: center;
 }
 .user-info p{
-    color: black;
+    color: #252B42;
+;
     font-weight: 500;
 }
 .r-card-head .w-reduce-p{
@@ -422,3 +444,72 @@ h3{
     font-weight: 600;
 }
 /* ----------------------------------------- */
+/* ----------------Join-section------------- */
+.join-content{
+    padding: 5rem 0;
+    row-gap: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.join-head{
+    text-align: center;
+}
+.search-sec{
+    display: flex;
+    width: 70%;
+    padding: 0 40px;
+    justify-content: center;
+}
+.join-inp{
+    padding: 0 15px;
+    border-radius:5px 0 0 5px ;
+    flex: 2;
+    border: none;
+}
+.join-inp:focus {
+    outline: none;
+  }
+.j-btn{
+    border-radius: 0 5px 5px 0;
+}
+::placeholder{
+    font-weight: 500;
+}
+/* ----------------------------------------- */
+/* --------------footer-------------------- */
+
+.footer-content{
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+}
+.contact-block{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.c-head{
+    color: #252B42;
+    font-size: 16px;
+    font-weight: 700;
+}
+.c-links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.c-links i{
+    font-size: 22px;
+    color: #23A6F0;
+}
+.c-link{
+    color: #737373;
+    font-size: 14px;
+    font-weight: 700;
+}
+.address-link{
+    width: max-content;
+}
+/* --------------------------------------- */
