@@ -151,6 +151,7 @@ nav a{
     padding: 0;
     flex-direction: column;
     flex-wrap: nowrap;
+    color: black;
 }
 .hero-card{
     max-width: 330px;
