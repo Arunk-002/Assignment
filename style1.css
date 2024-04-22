@@ -263,6 +263,7 @@ h3{
     height: 100%;
 }
 .sale-tag{
+    overflow: hidden;
     z-index: 1;
     color: white;
     background-color: red;
@@ -392,6 +393,7 @@ h3{
     color: white;
 }
 .new{
+    overflow: hidden;
     color: white;
     margin-top: -5rem;
     font-size: 24px;
@@ -483,7 +485,6 @@ h3{
     padding: 5rem 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-
 }
 .contact-block{
     display: flex;
@@ -511,5 +512,20 @@ h3{
 }
 .address-link{
     width: max-content;
+}
+.footer-social{
+    display: flex;
+    justify-content: space-between;
+}
+.social-links{
+    font-size: 24px;
+    color: #23A6F0;
+}
+.social-links i{
+    color: #23A6F0;
+    padding: 0 10px;
+}
+.social-desc{
+    color: #737373;
 }
 /* --------------------------------------- */
