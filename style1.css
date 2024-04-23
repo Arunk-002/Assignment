@@ -57,6 +57,9 @@ h5{
 h6{
     color: var(--p-clr);
     font-size: 14px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    max-width:100%;
 }
 h3{
     font-size: 24px;
@@ -118,6 +121,7 @@ h3{
     font: 16px;
     display: flex;
     align-items: center;
+    column-gap: 10px;
 }
 .btn-grp button i{
     padding: 0 2px;
@@ -144,7 +148,7 @@ h3{
     row-gap: 15px;
 }
 .w-reduce-h1{
-    width: 500px;
+    max-width: 500px;
 }
 .l-p{
     font-size: 20px
@@ -257,6 +261,7 @@ h3{
     width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
+
 .p-card{
     padding: 0;
     min-height: fit-content;
@@ -277,17 +282,20 @@ h3{
     padding: 4px 10px;
     border-radius: 5px;  
 }
+.upper-sec{
+    position: relative;
+}
 .option-tag{
     display: flex;
+    justify-content: center;
     column-gap: 10px;
-    align-items: center;
-    margin-top: -4rem;
-    margin-left: 5rem;
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
 }
 .option-bg{
     padding: 1rem; 
     color: #252B42;
-;
     background-color: white;
     border-radius: 50%;
 }
@@ -301,15 +309,16 @@ h3{
 ;
 }
 .card-rating{
-    align-items: center;
+    /* align-items: center; */
+    align-items: flex-start;
     display: flex;
     justify-content: space-between;
 }
 .rating-tag{
+    display: flex;
     padding: 6px;
     border-radius: 25px;
     background-color: #252B42;
-;
     color: white;
 }
 .gold-i{
@@ -367,7 +376,7 @@ h3{
     font-weight: 700;
 }
 .w-reduce-p{
-    width:195px ;
+    max-width:195px ;
 }
 .btn-full{
     justify-content: center;
@@ -425,6 +434,9 @@ h3{
     align-items: center;
     row-gap: 15px;
 }
+.review-card{
+    align-items: center;
+}
 .review-card .w-reduce-p{
     text-align: center;
 }
@@ -434,7 +446,7 @@ h3{
 .user-info{
     display: flex;
     column-gap: 15px;
-    align-items: center;
+    align-items: flex-start;
 }
 .user-info p{
     color: #252B42;
@@ -507,15 +519,21 @@ h3{
 }
 .c-link{
     color: #737373;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
 }
 .address-link{
     width: max-content;
 }
 .footer-social{
+    background: #FAFAFA;
+
+}
+.bootum{
     display: flex;
     justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
 }
 .social-links{
     font-size: 24px;
