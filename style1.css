@@ -294,7 +294,12 @@ h3{
     width: 100%;
 }
 .option-bg{
-    padding: 1rem; 
+    display: flex;
+    align-items: center;
+}
+.cart-btn{
+    padding:1rem;
+    font-size: 14px;
     color: #252B42;
     background-color: white;
     border-radius: 50%;
@@ -404,14 +409,15 @@ h3{
 .new{
     overflow: hidden;
     color: white;
-    margin-top: -5rem;
     font-size: 24px;
-    margin-left: 14.6rem;
     background: #E77C40;
     padding: 33px 20px;
     border-radius: 50%;
+    top: -38px;
+    right: -38px;
 }
 .sub-card{
+    position: relative;
     row-gap: 30px;
     box-shadow: 0px 0px 0 rgba(0, 0, 0, 0.2), 0px 0px 17px 0px rgba(0, 0, 0, 0.19);
 }
@@ -496,7 +502,7 @@ h3{
 .footer-content{
     padding: 5rem 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr .8fr;
 }
 .contact-block{
     display: flex;
@@ -527,7 +533,9 @@ h3{
 }
 .footer-social{
     background: #FAFAFA;
-
+}
+.addres-blk{
+    width: 80%;
 }
 .bootum{
     display: flex;
