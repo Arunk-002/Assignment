@@ -67,7 +67,9 @@ h3{
 .card-head{
     color: #252B42;
 }
-
+img{
+    max-width: 100%;
+}
 /* --------------------header----------------- */
 
 .brand-name{
@@ -529,6 +531,7 @@ h3{
     font-weight: 700;
 }
 .address-link{
+    margin-left: 7px;
     width: max-content;
 }
 .footer-social{
@@ -536,6 +539,9 @@ h3{
 }
 .addres-blk{
     width: 80%;
+}
+.addres-blk .check-line{
+    display: flex;
 }
 .bootum{
     display: flex;
