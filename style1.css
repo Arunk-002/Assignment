@@ -64,6 +64,9 @@ h6{
 h3{
     font-size: 24px;
 }
+img{
+    max-width:100%;
+}
 .card-head{
     color: #252B42;
 }
