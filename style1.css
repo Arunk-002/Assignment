@@ -74,7 +74,6 @@ img{
     max-width: 100%;
 }
 /* --------------------header----------------- */
-
 .brand-name{
     font-size: 24px;
     font-weight: 700;
@@ -133,12 +132,49 @@ img{
     font-size: 14px;
     float: right;
 }
-
+.drop-content{
+    margin-top: 10px;
+    margin-left: 5px;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.drop-content a{
+    color: var(--ash-clr);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.drop-content a:hover{
+    color: #252B42;
+}
+.dp-down:hover .drop-content{
+    display:block;
+}
+.ham-inp{
+    display: none;
+}
+.side-bar{
+    padding: 20px 30px;
+    display: none;
+    position: absolute;
+    width:200px;
+    height: 255px;
+    z-index: 999;
+}
+.ham-btn{
+    display: none;
+    margin: 0 10px;
+}
 /* ------------------------------------------- */
 /* -----------------hero-section-------------- */
 .container{
     margin: 0 auto;
-    width: 1080px;
+    max-width: 1080px;
 }
 .hero-section{
     background-image: url("./images/hero.png");
@@ -203,11 +239,11 @@ img{
 .c-row .hero-card:nth-child(3) .card-logo{
     background: #3C403D;
 
-;
+
 }
 .card-head{
     color: #252B42;
-;
+
 }
 .h-row{
     margin-top: -8rem;
@@ -316,7 +352,7 @@ img{
     padding: 10px 20px;
     padding-bottom: 30px;
     color: #252B42;
-;
+
 }
 .card-rating{
     /* align-items: center; */

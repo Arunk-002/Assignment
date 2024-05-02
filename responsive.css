@@ -1,0 +1,34 @@
+@media screen and (max-width: 1078px) {
+    .nav-elms{
+        display: none;
+    }
+    .ham-btn{
+        display: block;
+        padding: 0 20px;
+    }
+    
+
+    #check:checked ~ label i::before{
+        content: "\f00d";
+    }
+    #check:checked ~ .nav-elms{
+        position: absolute;
+        margin-top: 313px;
+        padding: 20px 30px; 
+        width:200px;
+        height: 255px;
+        background-color: #ECF4FF;
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .container{
+       padding: 0 3rem;
+    }
+    .navbar{
+        flex: none;
+        flex-basis: 74%;
+        padding-right: 3rem;
+    }
+}
