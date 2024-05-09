@@ -200,7 +200,7 @@ img{
 }
 .c-row{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
     gap: 30px;
 }
 .card{
@@ -309,13 +309,14 @@ img{
     height: 100%;
 }
 .sale-tag{
+    position: absolute;
     overflow: hidden;
     z-index: 1;
     color: white;
     background-color: red;
     font-size: 14px;
-    margin-top: -18rem;
-    margin-left: 1rem;
+    top: 15px;
+    left: 15px;
 }
 .overlay-tag{
     min-width: fit-content;

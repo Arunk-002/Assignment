@@ -1,4 +1,45 @@
 @media screen and (max-width: 1078px) {
+    /* .nav-elms{
+        display: none;
+    }
+    .ham-btn{
+        display: block;
+        padding: 0 20px;
+    }
+    
+
+    #check:checked ~ label i::before{
+        content: "\f00d";
+    }
+    #check:checked ~ .nav-elms{
+        position: absolute;
+        margin-top: 313px;
+        padding: 20px 30px; 
+        width:200px;
+        height: 255px;
+        background-color: #ECF4FF;
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    } */
+    .container{
+       padding: 0 3rem;
+    }
+    .navbar{
+        flex: none;
+        flex-basis: 74%;
+        padding-right: 3rem;
+    }
+}
+@media screen and (max-width: 500px)  {
+    .hero-section{
+        background-image: none;
+    }
+    p{  
+        /* width: 35%; */
+        font-size: 16px;
+    }
     .nav-elms{
         display: none;
     }
@@ -23,12 +64,29 @@
         flex-direction: column;
         row-gap: 10px;
     }
-    .container{
-       padding: 0 3rem;
+   
+}
+@media screen and (max-width: 450px) {
+    .h-row{
+        margin: 0 auto;
+        max-width: 450px;
+        grid-template-columns:1fr ;
     }
-    .navbar{
-        flex: none;
-        flex-basis: 74%;
-        padding-right: 3rem;
+    .c-row{
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+    }
+    .p-card{
+        flex-direction: row;
+    }
+    .h-row{
+        margin-top: -8rem;
+    }
+    .section-head{
+        align-items: center;
+        text-align: center;
+    }
+    .section-head p{
+       width: 35%;
     }
 }
