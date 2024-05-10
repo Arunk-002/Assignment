@@ -31,6 +31,16 @@
         flex-basis: 74%;
         padding-right: 3rem;
     }
+   
+}
+@media screen and (max-width: 769px)  {
+    .product-row{
+        grid-template-columns: 1fr;
+    }
+    .p-card{
+        flex-direction: row;
+    }
+
 }
 @media screen and (max-width: 500px)  {
     .hero-section{
@@ -47,7 +57,10 @@
         display: block;
         padding: 0 20px;
     }
-    
+    .block-content{
+        padding-top: 150px;
+        flex-direction: column;
+    }
 
     #check:checked ~ label i::before{
         content: "\f00d";
@@ -64,6 +77,44 @@
         flex-direction: column;
         row-gap: 10px;
     }
+    .brand-row{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    .product-row{
+        justify-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    .p-card{
+        max-width: 300px;
+        flex-direction: column;
+    }
+    .sub-card-row{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 55px;
+    }
+    .review-row{
+        grid-template-columns: 1fr 1fr;
+    }
+    .product-row{
+        justify-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+        row-gap: 55px;
+    }
+    .sub-card-row{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 55px;
+    }
+    .footer-content{
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 40px;
+        justify-items: center;
+    }
+    .contact-block{
+        justify-content: center;
+    }
    
 }
 @media screen and (max-width: 450px) {
@@ -72,13 +123,6 @@
         max-width: 450px;
         grid-template-columns:1fr ;
     }
-    .c-row{
-        margin: 0 auto;
-        grid-template-columns: 1fr;
-    }
-    .p-card{
-        flex-direction: row;
-    }
     .h-row{
         margin-top: -8rem;
     }
@@ -86,7 +130,30 @@
         align-items: center;
         text-align: center;
     }
-    .section-head p{
-       width: 35%;
+    .s-width{
+        width: 75% !important;
     }
+    .section-head p{
+       width: 100%;
+    }
+    .bootum{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+   
+
+}
+@media screen and (max-width:350px) {
+    .c-row{
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+    }
+    .review-row{
+        grid-template-columns: 1fr 1fr;
+    }
+    /* .footer-content{
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+    } */
 }
