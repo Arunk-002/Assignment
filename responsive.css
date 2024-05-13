@@ -1,4 +1,7 @@
 @media screen and (max-width: 1078px) {
+    img{
+        min-height:100%;
+    }
     /* .nav-elms{
         display: none;
     }
@@ -39,12 +42,26 @@
    
 }
 @media screen and (max-width: 769px)  {
+    .hero-section{
+        background-size: 470px;
+        background-position: right;
+    }
+    .nav-header{
+        position: fixed;
+        z-index: 999;
+    }
+    
     .product-row{
         grid-template-columns: 1fr;
     }
     .p-card{
         flex-direction: row;
     }
+    .block-content{
+        padding-top: 30px;
+    }
+   
+    
 
 }
 @media screen and (max-width: 500px)  {
@@ -64,20 +81,31 @@
     .nav-elms{
         display: none;
     }
+    .nav-bar{
+        position: relative;
+    }
     #check:checked ~ label i::before{
         content: "\f00d";
     }
     #check:checked ~ .nav-elms{
         position: absolute;
-        margin-top: 313px;
-        padding: 20px 30px; 
-        width:200px;
-        height: 255px;
+        top: 50px;
+        left: 1px;
+        padding: 20px 30px;
+        width: 100%;
+        height: 250px;
         background-color: #ECF4FF;
-        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.2);
         display: flex;
-        flex-direction: column;
-        row-gap: 10px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .nav-login{
+        visibility:visible;
+    }
+    .login{
+        display: none;
     }
     .ham-btn{
         display: block;
@@ -102,7 +130,7 @@
     /* --------------block-sec------------ */
     .block-content{
         padding-top: 150px;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .brand-row{
@@ -153,7 +181,7 @@
         font-size: 30px;
     }
     .btn{
-        font-size: 25px;
+        font-size: 20px;
     }
     h5,p{
         font-size: 25px;
@@ -170,7 +198,7 @@
     }
     .h-row{
         margin: 0 auto;
-        max-width: 7500px;
+        max-width: 750px;
         grid-template-columns:1fr ;
     }
     .navbar{

@@ -30,10 +30,8 @@ body,h1 ,h2,h3,h4,h5,h6{
     background-color: #ECF4FF;
 }
 body{
-    margin: 0px;
-    padding: 0px;
     font-size: 14px;
-    min-width:min-content;
+    min-width:max-content;
 }
 p{
     font-weight: 500;
@@ -126,6 +124,10 @@ img{
     display: flex;
     align-items: center;
     column-gap: 10px;
+}
+.nav-login{
+    padding: 0px;
+    visibility: hidden;
 }
 .btn-grp button i{
     padding: 0 2px;
@@ -258,6 +260,7 @@ img{
     display: flex;
     column-gap: 150px;
     align-items: center;
+    justify-content: center;
 }
 .block-content .red-bar::after{
     height: 7px;
