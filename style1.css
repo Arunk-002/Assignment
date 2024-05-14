@@ -73,6 +73,7 @@ img{
 }
 /* --------------------header----------------- */
 .brand-name{
+    white-space: nowrap;
     font-size: 24px;
     font-weight: 700;
 }
@@ -135,14 +136,11 @@ img{
     float: right;
 }
 .drop-content{
-    margin-top: 10px;
-    margin-left: 5px;
     display: none;
     position: absolute;
     min-width: 160px;
     border-radius: 5px;
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
-    /* z-index: 1; */
 }
 .drop-content a{
     color: var(--ash-clr);
