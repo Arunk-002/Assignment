@@ -47,6 +47,9 @@
         background-size: 470px;
         background-position: right;
     }
+    .h-head{
+        padding: 8rem 0;
+    }
     .nav-header{
         position: fixed;
         z-index: 999;
@@ -93,6 +96,9 @@
     .hero-section{
         background-image: none;
     }
+    .h-head{
+        padding: 11rem 0;
+    }
    
     .nav-elms{
         display: none;
@@ -134,7 +140,7 @@
         margin-left: 127px;
     }
     .h-row{
-        margin-top: -3rem !important;
+        margin-top: -7rem !important;
         
    }
    .hero-card{
