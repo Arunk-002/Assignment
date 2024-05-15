@@ -1,7 +1,4 @@
 @media screen and (max-width: 1078px) {
-    img{
-        min-height:100%;
-    }
     /* .nav-elms{
         display: none;
     }
@@ -44,13 +41,14 @@
 
 @media screen and (max-width: 769px)  {
     .hero-section{
-        background-size: 470px;
+        background-size: 425px;
         background-position: right;
     }
     .h-head{
         padding: 8rem 0;
     }
     .nav-header{
+        padding:1rem 0 ;
         position: fixed;
         z-index: 999;
     }
@@ -63,6 +61,7 @@
     }
     .block-content{
         padding-top: 30px;
+        row-gap: 30px;
     }
     .w-reduce-p{
         max-width: 80% !important;
@@ -168,19 +167,43 @@
     }
     /* ------------------------------ */
     /* --------------product------- */
-    h6{
-        font-size: 20px;
-    }
     .product-row{
         justify-items: center;
         row-gap: 55px;
     }
     .p-card{
-        max-width: 340px;
+        max-width: 550px;
         flex-direction: column;
     }
-    .sale-tag{
-        font-size: 20px;
+    .p-card img{
+        width: 550px;
+    }
+    .cart-btn{
+        padding: 2rem;
+
+    }
+
+    
+    /* -------------------------------- */
+    /* -------------pricing-------------- */
+    .w-reduce-h6 {
+        width: 263px;
+    }
+    .heart{
+        padding: 44px;
+       
+    }
+    .heart  i{
+        font-size: 60px;
+    }
+    .new{
+        padding: 56px 40px;
+        font-size: 30px;
+    }
+    .card-content{
+        row-gap: 30px;
+        padding: 10px 30px;
+        padding-bottom: 30px;
     }
     /* ------------------------------ */
     /* ------------------review-footer----- */
@@ -215,47 +238,65 @@
            font-size: 20px;
     
        }
-    /* ---------------------------------------- */
+    /* ------------------font-size---------------------- */
     .nav-block{
         font-size: 25px;
     }
     .brand-name{
-        font-size: 30px;
+        font-size: 38px;
     }
     .btn{
-        font-size: 20px;
+        font-size: 25px;
     }
-    h5,p{
+    h5,p,.l-p,h6{
         font-size: 25px;
     }
     h1{
         font-size: 6rem;
     }
+    .card-head{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .sale-tag{
+        padding: 8px 20px;
+        font-size: 20px;
+    }
+    .rating-tag{
+        padding: 15px;
+        font-size: 20px;
+    }
+    
    /* ------------------------------------------------- */
-   .section-head p{
-    width: 100%;
- }
- .h-row{
-     margin: 0 auto;
-     max-width: 750px;
-     grid-template-columns:1fr ;
- }
- .navbar{
-     flex-basis: 50%;
- }
- .s-width{
-     width: 75% !important;
- }
- .section-head{
-     align-items: center;
-     text-align: center;
- }
- .bootum{
-     flex-direction: column;
-     align-items: center;
-     row-gap: 30px;
- }
+    .section-head p{
+        width: 100%;
+    }
+    .h-row{
+        margin: 0 auto;
+        max-width: 750px;
+        row-gap: 50px;
+        grid-template-columns:1fr ;
+    }
+    .navbar{
+        flex-basis: 58%;
+    }
+    .s-width{
+        width: 75% !important;
+    }
+    .section-head{
+        align-items: center;
+        text-align: center;
+    }
+    .bootum{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
 }
+
+
 @media screen and (max-width: 450px) {
     .section-head p{
        width: 100%;
@@ -294,7 +335,25 @@
         width: 50%;
     }
     .footer-content{
-        max-width: 500px;
+        padding: 1rem 2rem;
+        /* flex-direction: column; */
+        align-items: center;
+      
+    }
+    .contact-block{
+        max-width: 60%;
+    }
+    .c-head{
+        font-size:30px;
+    }
+    .c-link{
+        font-size: 25px;
+    }
+    .social-desc{
+        font-size: 25px;
+    }
+    .social-links i{
+        font-size: 35px;
     }
     /* .footer-content{
         margin: 0 auto;
