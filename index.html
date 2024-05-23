@@ -17,13 +17,19 @@
                 <h3 class="brand-name">Medical  Naturo</h3>
                 <ul class="nav-elms">
                     <li><a class="elms" href="#">Home</a></li>
-                    <li><a class="elms" href="#">About</a></li>
                     <li><a class="elms" href="#">Pricing</a></li>
                     <li class="dp-down">
-                        <a class="elms" href="#">Product<i class="fa-solid fa-chevron-down down-i"></i></a>
+                        <input class="ham-inp" type="checkbox" id="dp-check">
+                        <a class="elms" href="#">Product <label for="dp-check"><i class="down-i fa-solid fa-chevron-down"></i></label></a>
                         <div class="drop-content bg-clr">
                             <a href="#">Product 1</a>
-                            <a href="#">Product 2</a>
+                            <input class="ham-inp" type="checkbox" id="dp-in-check">
+                            <a href="#">Product 2 <label for="dp-in-check"><i class="down-i fa-solid fa-chevron-down"></i></label></a>
+                            <div class="drop-in-content bg-clr">
+                                <a href="#">Product 1</a>
+                                <a href="#">Product 2</a>
+                                <a href="#">Product 3</a>
+                            </div>
                             <a href="#">Product 3</a>
                         </div>
                     </li>
@@ -50,7 +56,7 @@
             </div>
         </div>
    </section>
-   <div class="container">
+   <div class="container h-card-container">
     <div class="c-row h-row">
         <div class="card hero-card">
             <div class="card-logo ">
@@ -124,113 +130,115 @@
                     <p class="p-white">Problems trying to resolve the conflict between<br>
                         the two major realms of Classical physics: Newtonian mechanics </p>
                 </div>
-                <div class="row  product-row">
-                    <div class="card p-card">
-                        <div class="upper-sec"> 
-                            <img class="p-img" src="./images/s-c-1.png" alt="">
-                            <div class=" overlay-tag sale-tag">
-                                Sale
-                            </div>
-                            <div class="overlay-tag option-tag">
-                                <div class="option-bg">
-                                    <button class="btn  cart-btn"><i class="fa-regular fa-heart"></i></button>
+                <div class="container p-card-container">
+                    <div class="row  product-row">
+                        <div class="card p-card">
+                            <div class="upper-sec"> 
+                                <img class="p-img" src="./images/s-c-1.png" alt="">
+                                <div class=" overlay-tag sale-tag">
+                                    Sale
                                 </div>
-                                <div class=" option-bg">
-                                    <button class="btn  cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
-                                </div>
-                                <div class=" option-bg">
-                                    <button class="btn  cart-btn"><i class="fa-regular fa-eye"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-rating">
-                                <h6>English Department</h6>
-                                <div class="rating-tag">
-                                    <i class="fa-solid fa-star gold-i"></i>
-                                    4.9
+                                <div class="overlay-tag option-tag">
+                                    <div class="option-bg">
+                                        <button class="btn  cart-btn"><i class="fa-regular fa-heart"></i></button>
+                                    </div>
+                                    <div class=" option-bg">
+                                        <button class="btn  cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <div class=" option-bg">
+                                        <button class="btn  cart-btn"><i class="fa-regular fa-eye"></i></button>
+                                    </div>
                                 </div>
                             </div>
-                            <h5 class="card-head">Graphic Design</h5>
-                            <p>We focus on ergonomics and meeting 
-                                you where you work. It's only a 
-                                keystroke away.</p>
-                            <p class="download-tag"><i class="fa-solid fa-download"></i> 15 sales</p>
-                            <p class="o-price">$16.99  <span class="s-price">$6.99</span></p>
-                            <a href="#" class="btn  btn-border navig-btn">Learn More <i class="fa-solid fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="card p-card">
-                        <div class="upper-sec"> 
-                            <img class="p-img" src="./images/s-c-2.png" alt="">
-                            <div class=" overlay-tag sale-tag">
-                                Sale
-                            </div>
-                            <div class="overlay-tag option-tag">
-                                <div class="option-bg">
-                                    <button class="btn  cart-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-content">
+                                <div class="card-rating">
+                                    <h6>English Department</h6>
+                                    <div class="rating-tag">
+                                        <i class="fa-solid fa-star gold-i"></i>
+                                        4.9
+                                    </div>
                                 </div>
-                                <div class=" option-bg">
-                                    <button class="btn  cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
-                                </div>
-                                <div class=" option-bg">
-                                    <button class="btn  cart-btn"><i class="fa-regular fa-eye"></i></button>
-                                </div>
+                                <h5 class="card-head">Graphic Design</h5>
+                                <p>We focus on ergonomics and meeting 
+                                    you where you work. It's only a 
+                                    keystroke away.</p>
+                                <p class="download-tag"><i class="fa-solid fa-download"></i> 15 sales</p>
+                                <p class="o-price">$16.99  <span class="s-price">$6.99</span></p>
+                                <a href="#" class="btn  btn-border navig-btn">Learn More <i class="fa-solid fa-chevron-right"></i></a>
                             </div>
                         </div>
-                        <div class="card-content">
-                            <div class="card-rating">
-                                <h6>English Department</h6>
-                                <div class="rating-tag">
-                                    <i class="fa-solid fa-star gold-i"></i>
-                                    4.9
+                        <div class="card p-card">
+                            <div class="upper-sec"> 
+                                <img class="p-img" src="./images/s-c-2.png" alt="">
+                                <div class=" overlay-tag sale-tag">
+                                    Sale
+                                </div>
+                                <div class="overlay-tag option-tag">
+                                    <div class="option-bg">
+                                        <button class="btn  cart-btn"><i class="fa-regular fa-heart"></i></button>
+                                    </div>
+                                    <div class=" option-bg">
+                                        <button class="btn  cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <div class=" option-bg">
+                                        <button class="btn  cart-btn"><i class="fa-regular fa-eye"></i></button>
+                                    </div>
                                 </div>
                             </div>
-                            <h5 class="card-head">Graphic Design</h5>
-                            <p>We focus on ergonomics and meeting 
-                                you where you work. It's only a 
-                                keystroke away.</p>
-                            <p class="download-tag"><i class="fa-solid fa-download"></i> 15 sales</p>
-                            <p class="o-price">$16.99  <span class="s-price">$6.99</span></p>
-                            <a href="#" class="btn  btn-border navig-btn">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                            <div class="card-content">
+                                <div class="card-rating">
+                                    <h6>English Department</h6>
+                                    <div class="rating-tag">
+                                        <i class="fa-solid fa-star gold-i"></i>
+                                        4.9
+                                    </div>
+                                </div>
+                                <h5 class="card-head">Graphic Design</h5>
+                                <p>We focus on ergonomics and meeting 
+                                    you where you work. It's only a 
+                                    keystroke away.</p>
+                                <p class="download-tag"><i class="fa-solid fa-download"></i> 15 sales</p>
+                                <p class="o-price">$16.99  <span class="s-price">$6.99</span></p>
+                                <a href="#" class="btn  btn-border navig-btn">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card p-card">
-                        <div class="upper-sec"> 
-                            <img class="p-img" src="./images/s-c-3.png" alt="">
-                            <div class=" overlay-tag sale-tag">
-                                Sale
+                        <div class="card p-card">
+                            <div class="upper-sec"> 
+                                <img class="p-img" src="./images/s-c-3.png" alt="">
+                                <div class=" overlay-tag sale-tag">
+                                    Sale
+                                </div>
+                                <div class="overlay-tag option-tag">
+                                    <div class="option-bg">
+                                        <button class="btn  cart-btn"><i class="fa-regular fa-heart"></i></button>
+                                    </div>
+                                    <div class=" option-bg">
+                                        <button class="btn  cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+                                    </div>
+                                    <div class=" option-bg">
+                                        <button class="btn  cart-btn"><i class="fa-regular fa-eye"></i></button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="overlay-tag option-tag">
-                                <div class="option-bg">
-                                    <button class="btn  cart-btn"><i class="fa-regular fa-heart"></i></button>
+                            <div class="card-content">
+                                <div class="card-rating">
+                                    <h6>English Department</h6>
+                                    <div class="rating-tag">
+                                        <i class="fa-solid fa-star gold-i"></i>
+                                        4.9
+                                    </div>
                                 </div>
-                                <div class=" option-bg">
-                                    <button class="btn  cart-btn"><i class="fa-solid fa-cart-shopping"></i></button>
-                                </div>
-                                <div class=" option-bg">
-                                    <button class="btn  cart-btn"><i class="fa-regular fa-eye"></i></button>
-                                </div>
+                                <h5 class="card-head">Graphic Design</h5>
+                                <p>We focus on ergonomics and meeting 
+                                    you where you work. It's only a 
+                                    keystroke away.</p>
+                                <p class="download-tag"><i class="fa-solid fa-download"></i> 15 sales</p>
+                                <p class="o-price">$16.99  <span class="s-price">$6.99</span></p>
+                                <a href="#" class="btn  btn-border navig-btn">Learn More <i class="fa-solid fa-chevron-right"></i></a>
                             </div>
                         </div>
-                        <div class="card-content">
-                            <div class="card-rating">
-                                <h6>English Department</h6>
-                                <div class="rating-tag">
-                                    <i class="fa-solid fa-star gold-i"></i>
-                                    4.9
-                                </div>
-                            </div>
-                            <h5 class="card-head">Graphic Design</h5>
-                            <p>We focus on ergonomics and meeting 
-                                you where you work. It's only a 
-                                keystroke away.</p>
-                            <p class="download-tag"><i class="fa-solid fa-download"></i> 15 sales</p>
-                            <p class="o-price">$16.99  <span class="s-price">$6.99</span></p>
-                            <a href="#" class="btn  btn-border navig-btn">Learn More <i class="fa-solid fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </div> 
+                    </div> 
+                </div>
             </div>
         </div>  
    </section>
