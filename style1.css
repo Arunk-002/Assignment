@@ -77,6 +77,13 @@ img{
     font-size: 24px;
     font-weight: 700;
 }
+.fixed-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
 .nav-elms{
     flex-wrap: wrap;
     padding: 0px 10px;
@@ -145,7 +152,7 @@ img{
     position: absolute;
     min-width: 160px;
     border-radius: 5px;
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2); */
 }
 .drop-in-content{
     display: none !important;
