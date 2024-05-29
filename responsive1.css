@@ -62,12 +62,12 @@
 }
 
 @media screen and (min-width:869px) {
-    .drop-content{
+    /* .drop-content{
         background-color: #23A6F0;
         color: white;
-        /* display: none; */
         position: absolute;
-        top:-200px;
+        top: 44px;
+        opacity:0;
         visibility: hidden;
         min-width: 160px;
         border-radius: 5px;
@@ -75,8 +75,8 @@
         transition: all .4s ease-in-out;
     }
     .drop-in-content{
+        background-color: #23A6F0;
         position: absolute;
-        top: -200px;
         visibility: hidden;
         opacity: 0;
         color: white;
@@ -84,11 +84,12 @@
         padding-left: 15px;
         text-decoration: none;
         text-align: left;
+
     } 
     .drop-in-content:hover{
-        /* display: block; */
         visibility: visible;
         opacity: 1;
+        transition: all .4s ease-in-out;
 
     }
     .dp-down:hover .drop-content{
@@ -96,13 +97,53 @@
         visibility:visible ;
         opacity: 1;
     }
-    .dp-down-in:hover + .drop-in-content{
+    .dp-down-in:hover .drop-in-content{
         position: relative;
         top: 0px;
         visibility: visible;
         opacity: 1;
+    } */
+    .drop-content {
+        background-color: #23A6F0;
+        color: white;
+        position: absolute;
+        top: 44px;
+        opacity: 0;
+        visibility: hidden;
+        min-width: 160px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+        transition: all .4s ease-in-out;
     }
     
+    .drop-in-content {
+        background-color: #23A6F0;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        color: white;
+        padding: 12px 16px;
+        padding-left: 15px;
+        text-decoration: none;
+        text-align: left;
+        min-width: 160px;  /* Ensuring the dropdown has enough width */
+        left: 100%;        /* Positioning the dropdown to the right */
+        top: 45px;            /* Aligning with the top of the parent */
+        border-radius: 5px;
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+        transition: all .4s ease-in-out;
+    }
+    
+    .dp-down:hover .drop-content {
+        top: 65px;
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .dp-down-in:hover .drop-in-content {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 868px) {
@@ -135,7 +176,7 @@
         top: 50px;
         left: -300px;
         padding: 20px 30px;
-        width: 50%;
+        width: 320px;
         max-height: calc(100vh - 70px);
         background-color: #23A6F0;
         display: flex;
@@ -151,7 +192,6 @@
     .ham-btn{
         display: block;
         padding: 0 20px;
-
     }
     .login{
         display: none;
@@ -184,8 +224,9 @@
     #dp-check:checked ~ .elms i{
         transform: rotate(180deg);
     }
-    #dp-in-check:checked ~ .dp-down-in i{
-        transform: rotate(180deg);
+    .r-i{
+        margin-left: 5px;
+        transform: rotate(90deg);
     }
     #dp-check:checked ~ .drop-content{
         top: 10px;
@@ -198,10 +239,11 @@
         display: none !important;
     } */
     #dp-in-check:checked ~ .drop-in-content{
+        color: aqua;
         left: 10px;
-        position: relative;
-        
+        position: relative;  
     }
+
     /* #dp-in-check:checked ~ .nav-elms{
         height: 700px;
     } */

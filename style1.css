@@ -147,13 +147,13 @@ img{
     font-size: 14px;
     float: right;
 }
-.drop-content{
+/* .drop-content{ */
     /* display: none;
     position: absolute;
     min-width: 160px;
     border-radius: 5px; */
     /* box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2); */
-}
+/* } */
 /* .drop-in-content{
     display: none !important;
     color: var(--ash-clr);
@@ -171,6 +171,9 @@ img{
 }
 .drop-content a:hover{
     background-color: white;
+    color: #23A6F0;
+}
+.r-i:hover{
     color: #23A6F0;
 }
 /* .dp-down:hover .drop-content{
